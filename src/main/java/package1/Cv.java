@@ -36,14 +36,14 @@ public class Cv {
     public void setObjectif(String objectif) {
         this.objectif = objectif;
     }
-    public void setPremiereEducation(String premiereEducation) {
-        this.educationPremiere = premiereEducation;
+    public void seteducationPremiere(String educationPremiere) {
+        this.educationPremiere = educationPremiere;
     }
-    public void setDeuxiemeEducation(String deuxiemeEducation) {
-        this.educationDeuxieme = deuxiemeEducation;
+    public void seteducationDeuxieme(String educationDeuxieme) {
+        this.educationDeuxieme = educationDeuxieme;
     }
-    public void setTroisiemeEducation(String troisiemeEducation) {
-        this.educationTroisieme = troisiemeEducation;
+    public void setEducationTroisieme(String educationTroisieme) {
+        this.educationTroisieme = educationTroisieme;
     }
     public void setLanguageInfoConnu1(String languageInfoConnu1) {
         this.languageInfoConnu1 = languageInfoConnu1;
@@ -57,14 +57,14 @@ public class Cv {
     public void setMotivation(String motivation) {
         this.motivation = motivation;
     }
-    public void setPremiereExperience(String premiereExperience) {
-        this.experiencePremiere = premiereExperience;
+    public void setExperiencePremiere(String experiencePremiere) {
+        this.experiencePremiere = experiencePremiere;
     }
-    public void setDeuxiemeExperience(String deuxiemeExperience) {
-        this.experienceDeuxieme = deuxiemeExperience;
+    public void setexperienceDeuxieme(String experienceDeuxieme) {
+        this.experienceDeuxieme = experienceDeuxieme;
     }
-    public void setTroisiemeExperience(String troisiemeExperience) {
-        this.experienceTroisieme = troisiemeExperience;
+    public void setExperienceTroisieme(String experienceTroisieme) {
+        this.experienceTroisieme = experienceTroisieme;
     }
 
 
@@ -87,22 +87,22 @@ public class Cv {
     }
     public int getAge() {return age;}
     public String getObjectif() {return objectif;}
-    public String getPremiereEducation() {
+    public String getEducationPremiere() {
         return educationPremiere;
     }
-    public String getDeuxiemeEducation() {
+    public String getEducationDeuxieme() {
         return educationDeuxieme;
     }
-    public String getTroisiemeEducation() {
+    public String getEducationTroisieme() {
         return educationTroisieme;
     }
-    public String getPremiereExperience() {
+    public String getExperiencePremiere() {
         return experiencePremiere;
     }
-    public String getDeuxiemeExperience() {
+    public String getExperienceDeuxieme() {
         return experienceDeuxieme;
     }
-    public String getTroisiemeExperience() {
+    public String getExperienceTroisieme() {
         return experienceTroisieme;
     }
     public String getLanguageInfoConnu1() {
@@ -121,11 +121,11 @@ public class Cv {
 
     public Cv(String name, String firstname,  String sexe, int age,
             String objectif,
-            String premiereEducation ,String deuxiemeEducation,
-            String troisiemeEducation,
-            String premiereExperience,
-            String deuxiemeExperience,
-            String troisiemeExperience,
+            String educationPremiere ,String educationDeuxieme,
+            String educationTroisieme,
+            String experiencePremiere,
+            String experienceDeuxieme,
+            String experienceTroisieme,
             String languageInfoConnu1,
             String languageInfoConnu2,
             String languageInfoConnu3,
@@ -136,12 +136,12 @@ public class Cv {
         this.sexe= name;
         this.age= age;
         this.objectif= objectif;
-        this.educationPremiere= premiereEducation;
-        this.educationDeuxieme= deuxiemeEducation;
-        this.educationTroisieme= troisiemeEducation;
-        this.experiencePremiere= premiereExperience;
-        this.experienceDeuxieme= deuxiemeExperience;
-        this.experienceTroisieme= troisiemeExperience;
+        this.educationPremiere= educationPremiere;
+        this.educationDeuxieme= educationDeuxieme;
+        this.educationTroisieme= educationTroisieme;
+        this.experiencePremiere= experiencePremiere;
+        this.experienceDeuxieme= experienceDeuxieme;
+        this.experienceTroisieme= experienceTroisieme;
         this.languageInfoConnu1= languageInfoConnu1;
         this.languageInfoConnu2= languageInfoConnu2;
         this.languageInfoConnu3= languageInfoConnu3;
