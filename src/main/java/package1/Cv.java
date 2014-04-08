@@ -12,15 +12,9 @@ public class Cv {
     String sexe;
     int age;
     String objectif;
-    String educationPremiere;
-    String educationDeuxieme;
-    String educationTroisieme;
-    String experiencePremiere;
-    String experienceDeuxieme;
-    String experienceTroisieme;
-    String languageInfoConnu1;
-    String languageInfoConnu2;
-    String languageInfoConnu3;
+    String educations;
+    String experiences;
+    String languageInfoConnus;
     String motivation;
 
     public String getName() {
@@ -36,35 +30,17 @@ public class Cv {
     public void setObjectif(String objectif) {
         this.objectif = objectif;
     }
-    public void seteducationPremiere(String educationPremiere) {
-        this.educationPremiere = educationPremiere;
+    public void setEducations(String educations) {
+        this.educations = educations;
     }
-    public void seteducationDeuxieme(String educationDeuxieme) {
-        this.educationDeuxieme = educationDeuxieme;
-    }
-    public void setEducationTroisieme(String educationTroisieme) {
-        this.educationTroisieme = educationTroisieme;
-    }
-    public void setLanguageInfoConnu1(String languageInfoConnu1) {
-        this.languageInfoConnu1 = languageInfoConnu1;
-    }
-    public void setLanguageInfoConnu2(String languageInfoConnu2) {
-        this.languageInfoConnu2 = languageInfoConnu2;
-    }
-    public void setLanguageInfoConnu3(String languageInfoConnu3) {
-        this.languageInfoConnu3 = languageInfoConnu3;
+    public void setLanguageInfoConnus(String languageInfoConnus) {
+        this.languageInfoConnus = languageInfoConnus;
     }
     public void setMotivation(String motivation) {
         this.motivation = motivation;
     }
-    public void setExperiencePremiere(String experiencePremiere) {
-        this.experiencePremiere = experiencePremiere;
-    }
-    public void setexperienceDeuxieme(String experienceDeuxieme) {
-        this.experienceDeuxieme = experienceDeuxieme;
-    }
-    public void setExperienceTroisieme(String experienceTroisieme) {
-        this.experienceTroisieme = experienceTroisieme;
+    public void setExperiences(String experiences) {
+        this.experiences = experiences;
     }
 
 
@@ -87,48 +63,28 @@ public class Cv {
     }
     public int getAge() {return age;}
     public String getObjectif() {return objectif;}
-    public String getEducationPremiere() {
-        return educationPremiere;
+    public String getEducations() {
+        return educations;
     }
-    public String getEducationDeuxieme() {
-        return educationDeuxieme;
+    public String getExperiences() {
+        return experiences;
     }
-    public String getEducationTroisieme() {
-        return educationTroisieme;
+    public String getLanguageInfoConnus() {
+        return languageInfoConnus;
     }
-    public String getExperiencePremiere() {
-        return experiencePremiere;
-    }
-    public String getExperienceDeuxieme() {
-        return experienceDeuxieme;
-    }
-    public String getExperienceTroisieme() {
-        return experienceTroisieme;
-    }
-    public String getLanguageInfoConnu1() {
-        return languageInfoConnu1;
-    }
-    public String getLanguageInfoConnu2() {
-        return languageInfoConnu2;
-    }
-    public String getLanguageInfoConnu3() {
-        return languageInfoConnu3;
-    }
+
     public String getMotivation() {
         return motivation;
     }
 
 
-    public Cv(String name, String firstname,  String sexe, int age,
+    public Cv(String name, String firstname,
+            String sexe,
+            int age,
             String objectif,
-            String educationPremiere ,String educationDeuxieme,
-            String educationTroisieme,
-            String experiencePremiere,
-            String experienceDeuxieme,
-            String experienceTroisieme,
-            String languageInfoConnu1,
-            String languageInfoConnu2,
-            String languageInfoConnu3,
+            String educations ,
+            String experiences,
+            String languageInfoConnus,
             String motivation)
     {
         this.name = name;
@@ -136,15 +92,10 @@ public class Cv {
         this.sexe= name;
         this.age= age;
         this.objectif= objectif;
-        this.educationPremiere= educationPremiere;
-        this.educationDeuxieme= educationDeuxieme;
-        this.educationTroisieme= educationTroisieme;
-        this.experiencePremiere= experiencePremiere;
-        this.experienceDeuxieme= experienceDeuxieme;
-        this.experienceTroisieme= experienceTroisieme;
-        this.languageInfoConnu1= languageInfoConnu1;
-        this.languageInfoConnu2= languageInfoConnu2;
-        this.languageInfoConnu3= languageInfoConnu3;
+        this.educations= educations;
+        this.experiences= experiences;
+        this.languageInfoConnus= languageInfoConnus;
+
         this.motivation= motivation;
     }
 
