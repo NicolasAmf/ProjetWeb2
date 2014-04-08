@@ -12,12 +12,12 @@ public class Cv {
     String sexe;
     int age;
     String objectif;
-    String premiereEducation;
-    String deuxiemeEducation;
-    String troisiemeEducation;
-    String premiereExperience;
-    String deuxiemeExperience;
-    String troisiemeExperience;
+    String educationPremiere;
+    String educationDeuxieme;
+    String educationTroisieme;
+    String experiencePremiere;
+    String experienceDeuxieme;
+    String experienceTroisieme;
     String languageInfoConnu1;
     String languageInfoConnu2;
     String languageInfoConnu3;
@@ -37,13 +37,13 @@ public class Cv {
         this.objectif = objectif;
     }
     public void setPremiereEducation(String premiereEducation) {
-        this.premiereEducation = premiereEducation;
+        this.educationPremiere = premiereEducation;
     }
     public void setDeuxiemeEducation(String deuxiemeEducation) {
-        this.deuxiemeEducation = deuxiemeEducation;
+        this.educationDeuxieme = deuxiemeEducation;
     }
     public void setTroisiemeEducation(String troisiemeEducation) {
-        this.troisiemeEducation = troisiemeEducation;
+        this.educationTroisieme = troisiemeEducation;
     }
     public void setLanguageInfoConnu1(String languageInfoConnu1) {
         this.languageInfoConnu1 = languageInfoConnu1;
@@ -58,13 +58,13 @@ public class Cv {
         this.motivation = motivation;
     }
     public void setPremiereExperience(String premiereExperience) {
-        this.premiereExperience = premiereExperience;
+        this.experiencePremiere = premiereExperience;
     }
     public void setDeuxiemeExperience(String deuxiemeExperience) {
-        this.deuxiemeExperience = deuxiemeExperience;
+        this.experienceDeuxieme = deuxiemeExperience;
     }
     public void setTroisiemeExperience(String troisiemeExperience) {
-        this.troisiemeExperience = troisiemeExperience;
+        this.experienceTroisieme = troisiemeExperience;
     }
 
 
@@ -88,22 +88,22 @@ public class Cv {
     public int getAge() {return age;}
     public String getObjectif() {return objectif;}
     public String getPremiereEducation() {
-        return premiereEducation;
+        return educationPremiere;
     }
     public String getDeuxiemeEducation() {
-        return deuxiemeEducation;
+        return educationDeuxieme;
     }
     public String getTroisiemeEducation() {
-        return troisiemeEducation;
+        return educationTroisieme;
     }
     public String getPremiereExperience() {
-        return premiereExperience;
+        return experiencePremiere;
     }
     public String getDeuxiemeExperience() {
-        return deuxiemeExperience;
+        return experienceDeuxieme;
     }
     public String getTroisiemeExperience() {
-        return troisiemeExperience;
+        return experienceTroisieme;
     }
     public String getLanguageInfoConnu1() {
         return languageInfoConnu1;
@@ -136,12 +136,12 @@ public class Cv {
         this.sexe= name;
         this.age= age;
         this.objectif= objectif;
-        this.premiereEducation= premiereEducation;
-        this.deuxiemeEducation= deuxiemeEducation;
-        this.troisiemeEducation= troisiemeEducation;
-        this.premiereExperience= premiereExperience;
-        this.deuxiemeExperience= deuxiemeExperience;
-        this.troisiemeExperience= troisiemeExperience;
+        this.educationPremiere= premiereEducation;
+        this.educationDeuxieme= deuxiemeEducation;
+        this.educationTroisieme= troisiemeEducation;
+        this.experiencePremiere= premiereExperience;
+        this.experienceDeuxieme= deuxiemeExperience;
+        this.experienceTroisieme= troisiemeExperience;
         this.languageInfoConnu1= languageInfoConnu1;
         this.languageInfoConnu2= languageInfoConnu2;
         this.languageInfoConnu3= languageInfoConnu3;
