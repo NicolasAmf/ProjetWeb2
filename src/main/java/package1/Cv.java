@@ -16,6 +16,8 @@ public class Cv {
     String experiences;
     String languageInfoConnus;
     String motivation;
+    int id;
+    static int cpt = 0;
 
     public String getName() {
         return name;
@@ -87,6 +89,8 @@ public class Cv {
             String languageInfoConnus,
             String motivation)
     {
+        this.id = cpt;
+        cpt++;
         this.name = name;
         this.firstname = firstname;
         this.sexe= name;
