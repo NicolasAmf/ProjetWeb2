@@ -34,4 +34,18 @@ public class CvControleur
 
         return r2;
     }
+
+
+    @RequestMapping(method = RequestMethod.GET)
+    public @ResponseBody
+    ResumeList getCvInXML()
+    {
+        ResumeList rl = new ResumeList();
+        rl.cv.add(cv);
+        rl.cv.add(cv1);
+        rl.cv.add(cv2);
+
+        return rl;
+    }
+
 }

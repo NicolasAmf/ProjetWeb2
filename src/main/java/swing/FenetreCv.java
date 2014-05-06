@@ -30,7 +30,7 @@ public class FenetreCv extends JFrame
 
         try {
             //Charger la page
-            URL url = new URL("http://projetweb.nicolasamf.cloudbees.net/rest/cv/truc");
+            URL url = new URL("http://projetweb.nicolasamf.cloudbees.net/rest/cv/0");
             URLConnection uconnection = url.openConnection();
             InputStream input =  uconnection.getInputStream();
 
