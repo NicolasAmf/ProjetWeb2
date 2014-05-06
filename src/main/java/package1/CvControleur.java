@@ -22,17 +22,11 @@ public class CvControleur
     {
         ResumeList r2 = new ResumeList();
 
-        if(id == 0)
-        {
-            r2.cv.add(cv);
-            r2.cv.add(cv1);
-            r2.cv.add(cv2);
-        }
-        else if(cv.getId() == id)  r2.cv.add(cv);
-        else if(cv1.getId() == id)  r2.cv.add(cv1);
-        else if(cv2.getId() == id)  r2.cv.add(cv2);
+       if(cv.getId() == id)  r2.cv.add(cv);
+       else if(cv1.getId() == id)  r2.cv.add(cv1);
+       else if(cv2.getId() == id)  r2.cv.add(cv2);
 
-        return r2;
+       return r2;
     }
 
 
@@ -46,6 +40,17 @@ public class CvControleur
         rl.cv.add(cv2);
 
         return rl;
+    }
+
+    @RequestMapping(value="{name}", method = RequestMethod.PUT)
+    public @ResponseBody
+    ResumeList putCvInXML(@PathVariable String name)
+    {
+        ResumeList r3 = new ResumeList();
+
+        Cv cv2 = new Cv(name,"", "", 0, "", "","","","");
+
+        return r3;
     }
 
 }
