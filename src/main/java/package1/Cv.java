@@ -44,7 +44,9 @@ public class Cv {
     public void setExperiences(String experiences) {
         this.experiences = experiences;
     }
-
+    public void setId(int id) {
+        this.id = id;
+    }
 
     @XmlElement
     public void setName(String name) {
@@ -64,6 +66,7 @@ public class Cv {
         return sexe;
     }
     public int getAge() {return age;}
+    public int getId() {return id;}
     public String getObjectif() {return objectif;}
     public String getEducations() {
         return educations;
@@ -93,7 +96,7 @@ public class Cv {
         cpt++;
         this.name = name;
         this.firstname = firstname;
-        this.sexe= name;
+        this.sexe= sexe;
         this.age= age;
         this.objectif= objectif;
         this.educations= educations;
