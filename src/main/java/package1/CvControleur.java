@@ -29,9 +29,9 @@ public class CvControleur
         return r2;
     }
 
-    //@RequestMapping(value="{all}", method = RequestMethod.GET)
+    @RequestMapping(value="{all}", method = RequestMethod.GET)
     public @ResponseBody
-    ResumeList getCvInXML()
+    ResumeList getCvInXML(@PathVariable String all)
     {
         ResumeList rl = new ResumeList();
         rl.cv.add(cv);
