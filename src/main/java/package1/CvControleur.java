@@ -22,23 +22,16 @@ public class CvControleur
     {
         ResumeList r2 = new ResumeList();
 
-        if(cv.getId() == id)  r2.cv.add(cv);
+        if(id == 0)
+        {
+            r2.cv.add(cv);
+            r2.cv.add(cv1);
+            r2.cv.add(cv2);
+        }
+        else if(cv.getId() == id)  r2.cv.add(cv);
         else if(cv1.getId() == id)  r2.cv.add(cv1);
         else if(cv2.getId() == id)  r2.cv.add(cv2);
 
         return r2;
     }
-
-    @RequestMapping(value="{all}", method = RequestMethod.GET)
-    public @ResponseBody
-    ResumeList getCvInXML(@PathVariable String all)
-    {
-        ResumeList rl = new ResumeList();
-        rl.cv.add(cv);
-        rl.cv.add(cv1);
-        rl.cv.add(cv2);
-
-        return rl;
-    }
-
 }

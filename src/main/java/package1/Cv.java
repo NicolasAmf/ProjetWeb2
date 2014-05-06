@@ -17,7 +17,7 @@ public class Cv {
     String languageInfoConnus;
     String motivation;
     int id;
-    static int cpt = 0;
+    static int cpt = 1;
 
     public String getName() {
         return name;
