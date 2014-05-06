@@ -22,7 +22,7 @@ public class FenetreCv extends JFrame
 
         char letter;
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(1,1));
+        //panel.setLayout(new GridLayout(1,1));
         JLabel label = new JLabel("");
         panel.add(label);
         TextArea ta = new TextArea();
@@ -30,7 +30,7 @@ public class FenetreCv extends JFrame
 
         try {
             //Charger la page
-            URL url = new URL("http://projetweb.nicolasamf.cloudbees.net/rest/cv/0");
+            URL url = new URL("http://projetweb.nicolasamf.cloudbees.net/rest/cv/");
             URLConnection uconnection = url.openConnection();
             InputStream input =  uconnection.getInputStream();
 
